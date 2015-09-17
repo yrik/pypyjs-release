@@ -318,6 +318,14 @@
         "struct"
       ]
     }, 
+    "_multiprocessing": {
+      "file": "_multiprocessing.py", 
+      "imports": [
+        "os", 
+        "pickle", 
+        "select"
+      ]
+    }, 
     "_osx_support": {
       "file": "_osx_support.py", 
       "imports": [
@@ -428,6 +436,16 @@
         "struct"
       ]
     }, 
+    "_socket": {
+      "file": "_socket.py", 
+      "imports": [
+        "StringIO", 
+        "__future__", 
+        "js", 
+        "os", 
+        "time"
+      ]
+    }, 
     "_sqlite3": {
       "file": "_sqlite3.py", 
       "imports": [
@@ -486,9 +504,7 @@
     "_threading_local": {
       "file": "_threading_local.py", 
       "imports": [
-        "threading", 
-        "threading.RLock", 
-        "threading.current_thread"
+        "threading"
       ]
     }, 
     "_weakrefset": {
@@ -616,6 +632,22 @@
         "types"
       ]
     }, 
+    "big5": {
+      "file": "big5.py", 
+      "imports": [
+        "_codecs_tw", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "big5hkscs": {
+      "file": "big5hkscs.py", 
+      "imports": [
+        "_codecs_hk", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
     "binhex": {
       "file": "binhex.py", 
       "imports": [
@@ -632,6 +664,13 @@
       "file": "bisect.py", 
       "imports": [
         "_bisect.*"
+      ]
+    }, 
+    "bz2_codec": {
+      "file": "bz2_codec.py", 
+      "imports": [
+        "bz2", 
+        "codecs"
       ]
     }, 
     "cPickle": {
@@ -706,6 +745,12 @@
         "tokenize", 
         "traceback", 
         "types"
+      ]
+    }, 
+    "charmap": {
+      "file": "charmap.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "chunk": {
@@ -934,6 +979,240 @@
       "file": "copy_reg.py", 
       "imports": [
         "types"
+      ]
+    }, 
+    "cp037": {
+      "file": "cp037.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1006": {
+      "file": "cp1006.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1026": {
+      "file": "cp1026.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1140": {
+      "file": "cp1140.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1250": {
+      "file": "cp1250.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1251": {
+      "file": "cp1251.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1252": {
+      "file": "cp1252.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1253": {
+      "file": "cp1253.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1254": {
+      "file": "cp1254.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1255": {
+      "file": "cp1255.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1256": {
+      "file": "cp1256.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1257": {
+      "file": "cp1257.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp1258": {
+      "file": "cp1258.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp424": {
+      "file": "cp424.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp437": {
+      "file": "cp437.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp500": {
+      "file": "cp500.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp720": {
+      "file": "cp720.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp737": {
+      "file": "cp737.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp775": {
+      "file": "cp775.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp850": {
+      "file": "cp850.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp852": {
+      "file": "cp852.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp855": {
+      "file": "cp855.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp856": {
+      "file": "cp856.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp857": {
+      "file": "cp857.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp858": {
+      "file": "cp858.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp860": {
+      "file": "cp860.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp861": {
+      "file": "cp861.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp862": {
+      "file": "cp862.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp863": {
+      "file": "cp863.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp864": {
+      "file": "cp864.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp865": {
+      "file": "cp865.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp866": {
+      "file": "cp866.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp869": {
+      "file": "cp869.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp874": {
+      "file": "cp874.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp875": {
+      "file": "cp875.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "cp932": {
+      "file": "cp932.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "cp949": {
+      "file": "cp949.py", 
+      "imports": [
+        "_codecs_kr", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "cp950": {
+      "file": "cp950.py", 
+      "imports": [
+        "_codecs_tw", 
+        "_multibytecodec", 
+        "codecs"
       ]
     }, 
     "csv": {
@@ -10275,12 +10554,12 @@
         "gettext", 
         "os", 
         "pyinotify", 
-        "signal", 
         "sys", 
         "termios", 
         "threading", 
         "time", 
-        "traceback"
+        "traceback", 
+        "signal"
       ]
     }, 
     "django.utils.baseconv": {
@@ -11061,11 +11340,17 @@
     "dummy_threading": {
       "file": "dummy_threading.py", 
       "imports": [
-        "_dummy_threading.*", 
-        "_dummy_threading.__all__", 
+        "_threading_local", 
+        "collections", 
         "dummy_thread", 
-        "sys.modules", 
-        "threading"
+        "itertools.count", 
+        "js", 
+        "sys", 
+        "thread", 
+        "time.sleep", 
+        "time.time", 
+        "traceback", 
+        "warnings"
       ]
     }, 
     "email": {
@@ -12180,6 +12465,38 @@
         "ensurepip"
       ]
     }, 
+    "euc_jis_2004": {
+      "file": "euc_jis_2004.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "euc_jisx0213": {
+      "file": "euc_jisx0213.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "euc_jp": {
+      "file": "euc_jp.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "euc_kr": {
+      "file": "euc_kr.py", 
+      "imports": [
+        "_codecs_kr", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
     "filecmp": {
       "file": "filecmp.py", 
       "imports": [
@@ -12259,6 +12576,30 @@
         "itertools.ifilter", 
         "itertools.imap", 
         "itertools.izip"
+      ]
+    }, 
+    "gb18030": {
+      "file": "gb18030.py", 
+      "imports": [
+        "_codecs_cn", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "gb2312": {
+      "file": "gb2312.py", 
+      "imports": [
+        "_codecs_cn", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "gbk": {
+      "file": "gbk.py", 
+      "imports": [
+        "_codecs_cn", 
+        "_multibytecodec", 
+        "codecs"
       ]
     }, 
     "gdbm": {
@@ -12390,6 +12731,12 @@
         "warnings"
       ]
     }, 
+    "hp_roman8": {
+      "file": "hp_roman8.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
     "htmlentitydefs": {
       "file": "htmlentitydefs.py", 
       "imports": []
@@ -12419,11 +12766,28 @@
         "warnings"
       ]
     }, 
+    "hz": {
+      "file": "hz.py", 
+      "imports": [
+        "_codecs_cn", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
     "identity_dict": {
       "file": "identity_dict.py", 
       "imports": [
         "UserDict", 
         "__pypy__.identity_dict"
+      ]
+    }, 
+    "idna": {
+      "file": "idna.py", 
+      "imports": [
+        "codecs", 
+        "re", 
+        "stringprep", 
+        "unicodedata.ucd_3_2_0"
       ]
     }, 
     "ihooks": {
@@ -12526,6 +12890,160 @@
         "_io.UnsupportedOperation", 
         "_io.open", 
         "abc"
+      ]
+    }, 
+    "iso2022_jp": {
+      "file": "iso2022_jp.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_jp_1": {
+      "file": "iso2022_jp_1.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_jp_2": {
+      "file": "iso2022_jp_2.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_jp_2004": {
+      "file": "iso2022_jp_2004.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_jp_3": {
+      "file": "iso2022_jp_3.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_jp_ext": {
+      "file": "iso2022_jp_ext.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso2022_kr": {
+      "file": "iso2022_kr.py", 
+      "imports": [
+        "_codecs_iso2022", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "iso8859_1": {
+      "file": "iso8859_1.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_10": {
+      "file": "iso8859_10.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_11": {
+      "file": "iso8859_11.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_13": {
+      "file": "iso8859_13.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_14": {
+      "file": "iso8859_14.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_15": {
+      "file": "iso8859_15.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_16": {
+      "file": "iso8859_16.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_2": {
+      "file": "iso8859_2.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_3": {
+      "file": "iso8859_3.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_4": {
+      "file": "iso8859_4.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_5": {
+      "file": "iso8859_5.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_6": {
+      "file": "iso8859_6.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_7": {
+      "file": "iso8859_7.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_8": {
+      "file": "iso8859_8.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "iso8859_9": {
+      "file": "iso8859_9.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "johab": {
+      "file": "johab.py", 
+      "imports": [
+        "_codecs_kr", 
+        "_multibytecodec", 
+        "codecs"
       ]
     }, 
     "json": {
@@ -12710,6 +13228,18 @@
       "imports": [
         "sys", 
         "re"
+      ]
+    }, 
+    "koi8_r": {
+      "file": "koi8_r.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "koi8_u": {
+      "file": "koi8_u.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "lib2to3": {
@@ -13535,6 +14065,72 @@
         "cPickle"
       ]
     }, 
+    "mac_arabic": {
+      "file": "mac_arabic.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_centeuro": {
+      "file": "mac_centeuro.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_croatian": {
+      "file": "mac_croatian.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_cyrillic": {
+      "file": "mac_cyrillic.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_farsi": {
+      "file": "mac_farsi.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_greek": {
+      "file": "mac_greek.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_iceland": {
+      "file": "mac_iceland.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_latin2": {
+      "file": "mac_latin2.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_roman": {
+      "file": "mac_roman.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_romanian": {
+      "file": "mac_romanian.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "mac_turkish": {
+      "file": "mac_turkish.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
     "macurl2path": {
       "file": "macurl2path.py", 
       "imports": [
@@ -13579,6 +14175,12 @@
       "file": "marshal.py", 
       "imports": [
         "_marshal"
+      ]
+    }, 
+    "mbcs": {
+      "file": "mbcs.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "md5": {
@@ -13662,6 +14264,226 @@
         "warnings"
       ]
     }, 
+    "multiprocessing": {
+      "dir": "multiprocessing"
+    }, 
+    "multiprocessing.__init__": {
+      "file": "multiprocessing/__init__.py", 
+      "imports": [
+        "multiprocessing.connection", 
+        "multiprocessing.forking", 
+        "multiprocessing.managers", 
+        "multiprocessing.pool", 
+        "multiprocessing.process", 
+        "multiprocessing.queues", 
+        "multiprocessing.reduction", 
+        "multiprocessing.sharedctypes", 
+        "multiprocessing.synchronize", 
+        "multiprocessing.util", 
+        "os", 
+        "sys"
+      ]
+    }, 
+    "multiprocessing.connection": {
+      "file": "multiprocessing/connection.py", 
+      "imports": [
+        "_multiprocessing", 
+        "errno", 
+        "hmac", 
+        "itertools", 
+        "multiprocessing", 
+        "multiprocessing.forking", 
+        "multiprocessing.util", 
+        "os", 
+        "socket", 
+        "sys", 
+        "tempfile", 
+        "time", 
+        "xmlrpclib"
+      ]
+    }, 
+    "multiprocessing.dummy": {
+      "dir": "multiprocessing/dummy"
+    }, 
+    "multiprocessing.dummy.__init__": {
+      "file": "multiprocessing/dummy/__init__.py", 
+      "imports": [
+        "Queue", 
+        "array", 
+        "itertools", 
+        "multiprocessing", 
+        "multiprocessing.dummy.connection", 
+        "multiprocessing.pool", 
+        "sys", 
+        "threading", 
+        "threading.BoundedSemaphore", 
+        "threading.Event", 
+        "threading.Lock", 
+        "threading.RLock", 
+        "threading.Semaphore", 
+        "weakref"
+      ]
+    }, 
+    "multiprocessing.dummy.connection": {
+      "file": "multiprocessing/dummy/connection.py", 
+      "imports": [
+        "Queue"
+      ]
+    }, 
+    "multiprocessing.forking": {
+      "file": "multiprocessing/forking.py", 
+      "imports": [
+        "errno", 
+        "functools", 
+        "imp", 
+        "js", 
+        "multiprocessing.process", 
+        "multiprocessing.util", 
+        "os", 
+        "pickle", 
+        "random", 
+        "sys", 
+        "time", 
+        "signal"
+      ]
+    }, 
+    "multiprocessing.heap": {
+      "file": "multiprocessing/heap.py", 
+      "imports": [
+        "_multiprocessing", 
+        "_multiprocessing.win32", 
+        "bisect", 
+        "itertools", 
+        "mmap", 
+        "multiprocessing.forking", 
+        "multiprocessing.util", 
+        "os", 
+        "sys", 
+        "tempfile", 
+        "threading"
+      ]
+    }, 
+    "multiprocessing.managers": {
+      "file": "multiprocessing/managers.py", 
+      "imports": [
+        "Queue", 
+        "array", 
+        "cPickle", 
+        "multiprocessing", 
+        "multiprocessing.connection", 
+        "multiprocessing.forking", 
+        "multiprocessing.process", 
+        "multiprocessing.util", 
+        "os", 
+        "pickle", 
+        "sys", 
+        "threading", 
+        "traceback", 
+        "weakref"
+      ]
+    }, 
+    "multiprocessing.pool": {
+      "file": "multiprocessing/pool.py", 
+      "imports": [
+        "Queue", 
+        "collections", 
+        "itertools", 
+        "multiprocessing", 
+        "multiprocessing.dummy", 
+        "multiprocessing.queues", 
+        "multiprocessing.util", 
+        "threading", 
+        "time"
+      ]
+    }, 
+    "multiprocessing.process": {
+      "file": "multiprocessing/process.py", 
+      "imports": [
+        "itertools", 
+        "multiprocessing.forking", 
+        "multiprocessing.util", 
+        "os", 
+        "sys", 
+        "traceback", 
+        "signal"
+      ]
+    }, 
+    "multiprocessing.queues": {
+      "file": "multiprocessing/queues.py", 
+      "imports": [
+        "Queue", 
+        "atexit", 
+        "collections", 
+        "multiprocessing", 
+        "multiprocessing.forking", 
+        "multiprocessing.synchronize", 
+        "multiprocessing.util", 
+        "os", 
+        "sys", 
+        "threading", 
+        "time", 
+        "traceback", 
+        "weakref"
+      ]
+    }, 
+    "multiprocessing.reduction": {
+      "file": "multiprocessing/reduction.py", 
+      "imports": [
+        "_multiprocessing", 
+        "_multiprocessing.win32", 
+        "_subprocess", 
+        "multiprocessing", 
+        "multiprocessing.connection", 
+        "multiprocessing.forking", 
+        "multiprocessing.util", 
+        "os", 
+        "socket", 
+        "sys", 
+        "threading", 
+        "traceback"
+      ]
+    }, 
+    "multiprocessing.sharedctypes": {
+      "file": "multiprocessing/sharedctypes.py", 
+      "imports": [
+        "ctypes", 
+        "multiprocessing", 
+        "multiprocessing.forking", 
+        "multiprocessing.heap", 
+        "sys", 
+        "weakref"
+      ]
+    }, 
+    "multiprocessing.synchronize": {
+      "file": "multiprocessing/synchronize.py", 
+      "imports": [
+        "js", 
+        "multiprocessing.forking", 
+        "multiprocessing.process", 
+        "multiprocessing.util", 
+        "os", 
+        "sys", 
+        "threading", 
+        "time.sleep", 
+        "time.time"
+      ]
+    }, 
+    "multiprocessing.util": {
+      "file": "multiprocessing/util.py", 
+      "imports": [
+        "atexit", 
+        "itertools", 
+        "logging", 
+        "multiprocessing.process", 
+        "os", 
+        "shutil", 
+        "subprocess._args_from_interpreter_flags", 
+        "tempfile", 
+        "threading", 
+        "traceback", 
+        "weakref"
+      ]
+    }, 
     "mutex": {
       "file": "mutex.py", 
       "imports": [
@@ -13726,12 +14548,14 @@
     "os": {
       "file": "os.py", 
       "imports": [
+        "UserDict", 
         "_emx_link.link", 
         "ce", 
         "ce.*", 
         "ce._exit", 
         "copy_reg", 
         "errno", 
+        "js", 
         "nt", 
         "nt.*", 
         "nt._exit", 
@@ -13744,6 +14568,7 @@
         "posix", 
         "posix.*", 
         "posix._exit", 
+        "posixpath", 
         "riscos", 
         "riscos.*", 
         "riscos._exit", 
@@ -13751,9 +14576,13 @@
         "riscospath", 
         "subprocess", 
         "sys", 
-        "posixpath", 
-        "UserDict", 
         "warnings"
+      ]
+    }, 
+    "palmos": {
+      "file": "palmos.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "pdb": {
@@ -13777,16 +14606,17 @@
     "pickle": {
       "file": "pickle.py", 
       "imports": [
+        "StringIO", 
         "binascii", 
-        "cStringIO.StringIO", 
+        "cStringIO", 
         "copy_reg", 
         "doctest", 
+        "js", 
         "marshal", 
         "org.python.core.PyStringMap", 
-        "sys", 
         "re", 
-        "StringIO", 
         "struct", 
+        "sys", 
         "types"
       ]
     }, 
@@ -13948,6 +14778,12 @@
         "re"
       ]
     }, 
+    "ptcp154": {
+      "file": "ptcp154.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
     "pty": {
       "file": "pty.py", 
       "imports": [
@@ -13957,6 +14793,12 @@
         "select.select", 
         "sgi", 
         "tty"
+      ]
+    }, 
+    "punycode": {
+      "file": "punycode.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "pwd": {
@@ -14058,8 +14900,8 @@
       "imports": [
         "os", 
         "pyrepl.input", 
-        "signal", 
-        "sys"
+        "sys", 
+        "signal"
       ]
     }, 
     "pyrepl.completer": {
@@ -14175,12 +15017,12 @@
         "pyrepl.reader", 
         "pyrepl.unix_console", 
         "re", 
-        "signal", 
         "sys", 
         "traceback", 
         "twisted.internet.abstract.FileDescriptor", 
         "twisted.internet.reactor", 
-        "warnings"
+        "warnings", 
+        "signal"
       ]
     }, 
     "pyrepl.reader": {
@@ -14236,11 +15078,11 @@
         "pyrepl.unix_eventqueue", 
         "re", 
         "select", 
-        "signal", 
         "struct", 
         "sys", 
         "termios", 
-        "time"
+        "time", 
+        "signal"
       ]
     }, 
     "pyrepl.unix_eventqueue": {
@@ -14262,6 +15104,15 @@
         "cStringIO.StringIO", 
         "getopt", 
         "sys"
+      ]
+    }, 
+    "quopri_codec": {
+      "file": "quopri_codec.py", 
+      "imports": [
+        "StringIO", 
+        "cStringIO", 
+        "codecs", 
+        "quopri"
       ]
     }, 
     "random": {
@@ -14364,6 +15215,13 @@
         "urlparse"
       ]
     }, 
+    "rot_13": {
+      "file": "rot_13.py", 
+      "imports": [
+        "codecs", 
+        "sys"
+      ]
+    }, 
     "runpy": {
       "file": "runpy.py", 
       "imports": [
@@ -14416,6 +15274,30 @@
         "cPickle"
       ]
     }, 
+    "shift_jis": {
+      "file": "shift_jis.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "shift_jis_2004": {
+      "file": "shift_jis_2004.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
+    "shift_jisx0213": {
+      "file": "shift_jisx0213.py", 
+      "imports": [
+        "_codecs_jp", 
+        "_multibytecodec", 
+        "codecs"
+      ]
+    }, 
     "shlex": {
       "file": "shlex.py", 
       "imports": [
@@ -14442,6 +15324,10 @@
         "grp", 
         "pwd"
       ]
+    }, 
+    "signal": {
+      "file": "signal.py", 
+      "imports": []
     }, 
     "site": {
       "file": "site.py", 
@@ -14595,6 +15481,12 @@
         "strop.whitespace"
       ]
     }, 
+    "string_escape": {
+      "file": "string_escape.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
     "stringold": {
       "file": "stringold.py", 
       "imports": [
@@ -14619,6 +15511,10 @@
         "_struct.__doc__", 
         "_struct._clearcache"
       ]
+    }, 
+    "subprocess": {
+      "file": "subprocess.py", 
+      "imports": []
     }, 
     "symbol": {
       "file": "symbol.py", 
@@ -14696,7 +15592,7 @@
       "file": "tempfile.py", 
       "imports": [
         "StringIO", 
-        "cStringIO.StringIO", 
+        "cStringIO", 
         "dummy_thread", 
         "errno", 
         "fcntl", 
@@ -16483,7 +17379,6 @@
         "itertools", 
         "os", 
         "select", 
-        "signal", 
         "subprocess", 
         "sys", 
         "test.test_support", 
@@ -16491,7 +17386,8 @@
         "time", 
         "unittest", 
         "UserList", 
-        "weakref"
+        "weakref", 
+        "signal"
       ]
     }, 
     "test.test_file_eintr": {
@@ -16500,12 +17396,12 @@
         "_io.FileIO", 
         "os", 
         "select", 
-        "signal", 
         "subprocess", 
         "sys", 
         "test.test_support", 
         "time", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_filecmp": {
@@ -16581,11 +17477,11 @@
       "imports": [
         "imp", 
         "os", 
-        "signal", 
         "sys", 
         "test.fork_wait", 
         "test.test_support", 
-        "time"
+        "time", 
+        "signal"
       ]
     }, 
     "test.test_format": {
@@ -17193,7 +18089,6 @@
         "itertools.cycle", 
         "os", 
         "random", 
-        "signal", 
         "sys", 
         "test.test_support", 
         "threading", 
@@ -17201,7 +18096,8 @@
         "unittest", 
         "UserList", 
         "warnings", 
-        "weakref"
+        "weakref", 
+        "signal"
       ]
     }, 
     "test.test_ioctl": {
@@ -17288,11 +18184,11 @@
         "_pyio", 
         "io", 
         "os", 
-        "signal", 
         "stat", 
         "sys", 
         "test.test_support", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_lib2to3": {
@@ -17669,7 +18565,6 @@
         "multiprocessing.util", 
         "os", 
         "random", 
-        "signal", 
         "socket", 
         "subprocess", 
         "sys", 
@@ -17677,7 +18572,8 @@
         "test.test_support", 
         "threading", 
         "time", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_mutants": {
@@ -17817,7 +18713,6 @@
         "mmap", 
         "msvcrt", 
         "os", 
-        "signal", 
         "stat", 
         "subprocess", 
         "sys", 
@@ -17828,7 +18723,8 @@
         "unittest", 
         "uuid", 
         "warnings", 
-        "resource"
+        "resource", 
+        "signal"
       ]
     }, 
     "test.test_ossaudiodev": {
@@ -18171,11 +19067,11 @@
         "os", 
         "pty", 
         "select", 
-        "signal", 
         "socket", 
         "sys", 
         "test.test_support", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_pwd": {
@@ -18553,13 +19449,13 @@
         "os", 
         "pickle", 
         "select", 
-        "signal", 
         "subprocess", 
         "sys", 
         "test.test_support", 
         "time", 
         "traceback", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_site": {
@@ -18626,7 +19522,6 @@
         "math", 
         "os", 
         "select", 
-        "signal", 
         "socket", 
         "sys", 
         "test.test_support", 
@@ -18636,7 +19531,8 @@
         "traceback", 
         "unittest", 
         "weakref", 
-        "_testcapi"
+        "_testcapi", 
+        "signal"
       ]
     }, 
     "test.test_socketserver": {
@@ -18648,12 +19544,12 @@
         "imp", 
         "os", 
         "select", 
-        "signal", 
         "socket", 
         "tempfile", 
         "test.test_support", 
         "threading", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_softspace": {
@@ -18855,7 +19751,6 @@
         "errno", 
         "os", 
         "re", 
-        "signal", 
         "subprocess", 
         "sys", 
         "sysconfig", 
@@ -18864,7 +19759,8 @@
         "threading", 
         "time", 
         "unittest", 
-        "resource"
+        "resource", 
+        "signal"
       ]
     }, 
     "test.test_sunau": {
@@ -19128,13 +20024,13 @@
         "os", 
         "re", 
         "shutil", 
-        "signal", 
         "stat", 
         "sys", 
         "tempfile", 
         "test.test_support", 
         "unittest", 
-        "warnings"
+        "warnings", 
+        "signal"
       ]
     }, 
     "test.test_textwrap": {
@@ -19214,10 +20110,10 @@
       "file": "test/test_threadsignals.py", 
       "imports": [
         "os", 
-        "signal", 
         "sys", 
         "test.test_support", 
-        "unittest"
+        "unittest", 
+        "signal"
       ]
     }, 
     "test.test_time": {
@@ -19975,8 +20871,8 @@
         "ctypes.WINFUNCTYPE", 
         "ctypes.wintypes", 
         "mmap", 
-        "signal", 
-        "sys"
+        "sys", 
+        "signal"
       ]
     }, 
     "test.xmltests": {
@@ -19997,6 +20893,22 @@
       "file": "this.py", 
       "imports": []
     }, 
+    "threading": {
+      "file": "threading.py", 
+      "imports": [
+        "_threading_local", 
+        "collections", 
+        "dummy_thread", 
+        "itertools.count", 
+        "js", 
+        "sys", 
+        "thread", 
+        "time.sleep", 
+        "time.time", 
+        "traceback", 
+        "warnings"
+      ]
+    }, 
     "timeit": {
       "file": "timeit.py", 
       "imports": [
@@ -20007,6 +20919,12 @@
         "sys", 
         "time", 
         "traceback"
+      ]
+    }, 
+    "tis_620": {
+      "file": "tis_620.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "toaiff": {
@@ -20081,6 +20999,12 @@
       "file": "types.py", 
       "imports": [
         "sys"
+      ]
+    }, 
+    "undefined": {
+      "file": "undefined.py", 
+      "imports": [
+        "codecs"
       ]
     }, 
     "unittest": {
@@ -20171,8 +21095,8 @@
       "file": "unittest/signals.py", 
       "imports": [
         "functools", 
-        "signal", 
-        "weakref"
+        "weakref", 
+        "signal"
       ]
     }, 
     "unittest.suite": {
@@ -20217,10 +21141,10 @@
         "cStringIO.StringIO", 
         "gc", 
         "os", 
-        "signal", 
         "sys", 
         "unittest", 
-        "weakref"
+        "weakref", 
+        "signal"
       ]
     }, 
     "unittest.test.test_case": {
@@ -20394,6 +21318,49 @@
         "warnings"
       ]
     }, 
+    "utf_16_be": {
+      "file": "utf_16_be.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "utf_16_le": {
+      "file": "utf_16_le.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "utf_32": {
+      "file": "utf_32.py", 
+      "imports": [
+        "codecs", 
+        "sys"
+      ]
+    }, 
+    "utf_32_be": {
+      "file": "utf_32_be.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "utf_32_le": {
+      "file": "utf_32_le.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "utf_7": {
+      "file": "utf_7.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
+    "utf_8_sig": {
+      "file": "utf_8_sig.py", 
+      "imports": [
+        "codecs"
+      ]
+    }, 
     "uu": {
       "file": "uu.py", 
       "imports": [
@@ -20401,6 +21368,16 @@
         "optparse", 
         "os", 
         "sys"
+      ]
+    }, 
+    "uu_codec": {
+      "file": "uu_codec.py", 
+      "imports": [
+        "binascii", 
+        "binascii.a2b_uu", 
+        "binascii.b2a_uu", 
+        "cStringIO", 
+        "codecs"
       ]
     }, 
     "uuid": {
@@ -20787,6 +21764,13 @@
         "textwrap", 
         "time", 
         "warnings", 
+        "zlib"
+      ]
+    }, 
+    "zlib_codec": {
+      "file": "zlib_codec.py", 
+      "imports": [
+        "codecs", 
         "zlib"
       ]
     }

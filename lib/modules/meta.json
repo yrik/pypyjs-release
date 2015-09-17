@@ -12,12 +12,8 @@
     "cffi", 
     "_ffi", 
     "_rawffi", 
-    "subprocess", 
     "_subprocess", 
-    "threading", 
     "thread", 
-    "multiprocessing", 
-    "_multiprocessing", 
     "audiodev", 
     "audioop", 
     "Carbon", 
@@ -157,6 +153,7 @@
       "dummy_threading"
     ], 
     "_emx_link.link": [
+      "os", 
       "os"
     ], 
     "_gdbm_cffi.ffi": [
@@ -246,7 +243,8 @@
       "tarfile", 
       "test.test_tarfile", 
       "test.test_codecs", 
-      "django.core.management.commands.loaddata"
+      "django.core.management.commands.loaddata", 
+      "bz2_codec"
     ], 
     "bz2.BZ2Compressor": [
       "test.test_bz2"
@@ -258,12 +256,15 @@
       "test.test_bz2"
     ], 
     "ce": [
+      "os", 
       "os"
     ], 
     "ce.*": [
+      "os", 
       "os"
     ], 
     "ce._exit": [
+      "os", 
       "os"
     ], 
     "cl": [
@@ -314,7 +315,8 @@
       "test.test_signal", 
       "test.test_mailbox", 
       "test.test_io", 
-      "django.core.files.locks"
+      "django.core.files.locks", 
+      "tempfile"
     ], 
     "fcntl.I_PUSH": [
       "pty"
@@ -381,7 +383,8 @@
     "mmap": [
       "test.win_console_handler", 
       "test.test_zlib", 
-      "test.test_os"
+      "test.test_os", 
+      "multiprocessing.heap"
     ], 
     "mock": [
       "django.test.__init__"
@@ -494,6 +497,7 @@
       "test.test_importhooks"
     ], 
     "riscospath": [
+      "os", 
       "os"
     ], 
     "rourl2path.pathname2url": [
@@ -531,7 +535,8 @@
       "test.test_file2k", 
       "test.test_epoll", 
       "test.test_asyncore", 
-      "pyrepl.unix_console"
+      "pyrepl.unix_console", 
+      "_multiprocessing"
     ], 
     "select.select": [
       "pty"
@@ -553,29 +558,6 @@
     ], 
     "sgi": [
       "pty"
-    ], 
-    "signal": [
-      "test.win_console_handler", 
-      "test.test_threadsignals", 
-      "test.test_tempfile", 
-      "test.test_subprocess", 
-      "test.test_socketserver", 
-      "test.test_socket", 
-      "test.test_signal", 
-      "test.test_pty", 
-      "test.test_os", 
-      "test.test_multiprocessing", 
-      "test.test_largefile", 
-      "test.test_io", 
-      "test.test_fork1", 
-      "test.test_file_eintr", 
-      "test.test_file2k", 
-      "unittest.test.test_break", 
-      "unittest.signals", 
-      "pyrepl.unix_console", 
-      "pyrepl.python_reader", 
-      "pyrepl.commands", 
-      "django.utils.autoreload"
     ], 
     "sitecustomize": [
       "site", 
@@ -732,7 +714,8 @@
       "zipfile", 
       "django.core.signing", 
       "django.core.files.images", 
-      "django.core.cache.backends.filebased"
+      "django.core.cache.backends.filebased", 
+      "zlib_codec"
     ]
   }
 }
