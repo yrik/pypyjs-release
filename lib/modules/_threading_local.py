@@ -155,7 +155,7 @@ class _localbase(object):
         object.__setattr__(self, '_local__args', (args, kw))
         object.__setattr__(self, '_local__lock', RLock())
 
-        if (args or kw) and (cls.__init__ == object.__init__):
+        if (args or kw) and (cls.__init__ is object.__init__):
             raise TypeError("Initialization arguments are not supported")
 
         # We need to create the thread dict in anticipation of
@@ -248,4 +248,12 @@ class local(_localbase):
                 except KeyError:
                     pass # didn't have anything in this thread
 
-from threading import current_thread, RLock
+#from threading import current_thread, RLock
+class current_thread(object):
+    pass
+
+class RLock(object):
+    def acquire(self):
+        return 
+    def release(self):
+        return

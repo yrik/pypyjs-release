@@ -1,10 +1,8 @@
 """A multi-producer, multi-consumer queue."""
 
 from time import time as _time
-try:
-    import threading as _threading
-except ImportError:
-    import dummy_threading as _threading
+
+import dummy_threading as _threading
 from collections import deque
 import heapq
 
