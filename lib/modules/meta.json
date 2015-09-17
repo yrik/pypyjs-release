@@ -64,6 +64,15 @@
     "ElementC14N._serialize_c14n": [
       "xml.etree.ElementTree"
     ], 
+    "IPython.Shell.IPShell": [
+      "django.core.management.commands.shell"
+    ], 
+    "IPython.frontend.terminal.ipapp.TerminalIPythonApp": [
+      "django.core.management.commands.shell"
+    ], 
+    "IPython.start_ipython": [
+      "django.core.management.commands.shell"
+    ], 
     "Mailman.MailList": [
       "smtpd"
     ], 
@@ -72,6 +81,33 @@
     ], 
     "Mailman.Utils": [
       "smtpd"
+    ], 
+    "MySQLdb": [
+      "django.db.backends.mysql.base"
+    ], 
+    "MySQLdb.constants.CLIENT": [
+      "django.db.backends.mysql.base"
+    ], 
+    "MySQLdb.constants.FIELD_TYPE": [
+      "django.db.backends.mysql.introspection", 
+      "django.db.backends.mysql.base", 
+      "django.contrib.gis.db.backends.mysql.introspection"
+    ], 
+    "MySQLdb.converters": [
+      "django.db.backends.mysql.schema"
+    ], 
+    "MySQLdb.converters.Thing2Literal": [
+      "django.db.backends.mysql.base"
+    ], 
+    "MySQLdb.converters.conversions": [
+      "django.db.backends.mysql.base"
+    ], 
+    "PIL.Image": [
+      "django.forms.fields", 
+      "django.db.models.fields.files"
+    ], 
+    "PIL.ImageFile": [
+      "django.core.files.images"
     ], 
     "Pyrex.Distutils.build_ext.build_ext": [
       "distutils.tests.setuptools_extension", 
@@ -174,6 +210,9 @@
     "_syslog_cffi.lib": [
       "syslog"
     ], 
+    "_systemrestart.SystemRestart": [
+      "django.utils.autoreload"
+    ], 
     "_xmlplus": [
       "xml.__init__"
     ], 
@@ -198,12 +237,16 @@
     "areallylongpackageandmodulenametotestreprtruncation.areallylongpackageandmodulenametotestreprtruncation.qux": [
       "test.test_repr"
     ], 
+    "bpython": [
+      "django.core.management.commands.shell"
+    ], 
     "bz2": [
       "encodings.bz2_codec", 
       "fileinput", 
       "tarfile", 
       "test.test_tarfile", 
-      "test.test_codecs"
+      "test.test_codecs", 
+      "django.core.management.commands.loaddata"
     ], 
     "bz2.BZ2Compressor": [
       "test.test_bz2"
@@ -229,20 +272,35 @@
     "cocoasupport.CocoaInteracter": [
       "pyrepl.python_reader"
     ], 
+    "cx_Oracle": [
+      "django.db.backends.oracle.introspection", 
+      "django.db.backends.oracle.base", 
+      "django.contrib.gis.db.backends.oracle.introspection"
+    ], 
+    "cx_Oracle.CLOB": [
+      "django.contrib.gis.db.backends.oracle.adapter"
+    ], 
     "dl.RTLD_NOW": [
       "distutils.tests.setuptools_build_ext"
     ], 
     "docutils": [
       "distutils.tests.test_register"
     ], 
+    "docutils.core": [
+      "django.contrib.admindocs.utils"
+    ], 
     "docutils.frontend": [
       "distutils.command.check"
     ], 
     "docutils.nodes": [
-      "distutils.command.check"
+      "distutils.command.check", 
+      "django.contrib.admindocs.utils"
     ], 
     "docutils.parsers.rst.Parser": [
       "distutils.command.check"
+    ], 
+    "docutils.parsers.rst.roles": [
+      "django.contrib.admindocs.utils"
     ], 
     "docutils.utils.Reporter": [
       "distutils.command.check"
@@ -255,7 +313,8 @@
       "tempfile", 
       "test.test_signal", 
       "test.test_mailbox", 
-      "test.test_io"
+      "test.test_io", 
+      "django.core.files.locks"
     ], 
     "fcntl.I_PUSH": [
       "pty"
@@ -263,6 +322,9 @@
     "fcntl.ioctl": [
       "pty", 
       "pyrepl.unix_console"
+    ], 
+    "flup": [
+      "django.core.servers.fastcgi"
     ], 
     "foo": [
       "test.test_pkgutil", 
@@ -306,13 +368,23 @@
     "imgfile": [
       "test.test_imageop"
     ], 
+    "jinja2": [
+      "django.test.utils", 
+      "django.template.backends.jinja2"
+    ], 
     "macostools": [
       "test.test_macostools"
+    ], 
+    "memcache": [
+      "django.core.cache.backends.memcached"
     ], 
     "mmap": [
       "test.win_console_handler", 
       "test.test_zlib", 
       "test.test_os"
+    ], 
+    "mock": [
+      "django.test.__init__"
     ], 
     "myfixes.fix_explicit.FixExplicit": [
       "lib2to3.tests.test_refactor"
@@ -332,11 +404,57 @@
     "netbios": [
       "uuid"
     ], 
+    "numpy": [
+      "django.contrib.gis.geos.base"
+    ], 
     "ossaudiodev.AFMT_S16_NE": [
       "test.test_ossaudiodev"
     ], 
     "pip": [
       "ensurepip.__init__"
+    ], 
+    "pkg_resources.resource_string": [
+      "django.template.loaders.eggs"
+    ], 
+    "psycopg2": [
+      "django.db.backends.postgresql_psycopg2.schema", 
+      "django.db.backends.postgresql_psycopg2.base"
+    ], 
+    "psycopg2.Binary": [
+      "django.contrib.gis.db.backends.postgis.adapter"
+    ], 
+    "psycopg2.ProgrammingError": [
+      "django.contrib.postgres.signals"
+    ], 
+    "psycopg2.extensions": [
+      "django.db.backends.postgresql_psycopg2.base"
+    ], 
+    "psycopg2.extensions.ISQLQuote": [
+      "django.contrib.gis.db.backends.postgis.adapter"
+    ], 
+    "psycopg2.extras": [
+      "django.db.backends.postgresql_psycopg2.base"
+    ], 
+    "psycopg2.extras.DateRange": [
+      "django.contrib.postgres.forms.ranges", 
+      "django.contrib.postgres.fields.ranges"
+    ], 
+    "psycopg2.extras.DateTimeTZRange": [
+      "django.contrib.postgres.forms.ranges", 
+      "django.contrib.postgres.fields.ranges"
+    ], 
+    "psycopg2.extras.Inet": [
+      "django.db.backends.postgresql_psycopg2.operations"
+    ], 
+    "psycopg2.extras.NumericRange": [
+      "django.contrib.postgres.forms.ranges", 
+      "django.contrib.postgres.fields.ranges"
+    ], 
+    "psycopg2.extras.Range": [
+      "django.contrib.postgres.fields.ranges"
+    ], 
+    "psycopg2.extras.register_hstore": [
+      "django.contrib.postgres.signals"
     ], 
     "py": [
       "ctypes_config_cache.rebuild"
@@ -353,6 +471,24 @@
     "pygame.locals.*": [
       "pyrepl.pygame_keymap", 
       "pyrepl.pygame_console"
+    ], 
+    "pyinotify": [
+      "django.utils.autoreload"
+    ], 
+    "pylibmc": [
+      "django.core.cache.backends.memcached"
+    ], 
+    "pysqlite2.dbapi2": [
+      "django.db.backends.sqlite3.base"
+    ], 
+    "pytz": [
+      "django.utils.timezone", 
+      "django.templatetags.tz", 
+      "django.db.backends.sqlite3.operations", 
+      "django.db.backends.sqlite3.features", 
+      "django.db.backends.sqlite3.base", 
+      "django.db.backends.oracle.features", 
+      "django.db.backends.mysql.features"
     ], 
     "reloadmodule": [
       "test.test_importhooks"
@@ -400,6 +536,21 @@
     "select.select": [
       "pty"
     ], 
+    "selenium.common.exceptions.NoSuchElementException": [
+      "django.contrib.admin.tests"
+    ], 
+    "selenium.common.exceptions.TimeoutException": [
+      "django.contrib.admin.tests"
+    ], 
+    "selenium.webdriver.common.by.By": [
+      "django.contrib.admin.tests"
+    ], 
+    "selenium.webdriver.support.expected_conditions": [
+      "django.contrib.admin.tests"
+    ], 
+    "selenium.webdriver.support.wait.WebDriverWait": [
+      "django.contrib.admin.tests"
+    ], 
     "sgi": [
       "pty"
     ], 
@@ -423,11 +574,15 @@
       "unittest.signals", 
       "pyrepl.unix_console", 
       "pyrepl.python_reader", 
-      "pyrepl.commands"
+      "pyrepl.commands", 
+      "django.utils.autoreload"
     ], 
     "sitecustomize": [
       "site", 
       "test.test_site"
+    ], 
+    "sqlparse": [
+      "django.db.backends.base.operations"
     ], 
     "strop": [
       "test.test_strop"
@@ -490,7 +645,8 @@
     "termios": [
       "getpass", 
       "pyrepl.unix_console", 
-      "pyrepl.fancy_termios"
+      "pyrepl.fancy_termios", 
+      "django.utils.autoreload"
     ], 
     "termios.*": [
       "tty"
@@ -513,6 +669,9 @@
     "twisted.internet.reactor": [
       "pyrepl.python_reader"
     ], 
+    "unittest2.*": [
+      "django.utils.unittest"
+    ], 
     "usercustomize": [
       "site"
     ], 
@@ -527,6 +686,21 @@
     ], 
     "xxsubtype": [
       "test.test_descr"
+    ], 
+    "yaml": [
+      "django.core.serializers.pyyaml"
+    ], 
+    "yaml.CSafeDumper": [
+      "django.core.serializers.pyyaml"
+    ], 
+    "yaml.CSafeLoader": [
+      "django.core.serializers.pyyaml"
+    ], 
+    "yaml.SafeDumper": [
+      "django.core.serializers.pyyaml"
+    ], 
+    "yaml.SafeLoader": [
+      "django.core.serializers.pyyaml"
     ], 
     "zip_pkg": [
       "test.test_zipimport_support"
@@ -555,7 +729,10 @@
       "test.test_shutil", 
       "test.test_codecs", 
       "test.string_tests", 
-      "zipfile"
+      "zipfile", 
+      "django.core.signing", 
+      "django.core.files.images", 
+      "django.core.cache.backends.filebased"
     ]
   }
 }
