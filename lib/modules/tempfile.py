@@ -493,11 +493,11 @@ else:
             flags = _bin_openflags
         else:
             flags = _text_openflags
+
         (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags)
         try:
-            rv = _os.fdopen(fd, mode, bufsize)
             _os.unlink(name)
-            return rv
+            return _os.fdopen(fd, mode, bufsize)
         except:
             _os.close(fd)
             raise

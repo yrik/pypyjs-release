@@ -1402,13 +1402,6 @@ def decode_long(data):
         n -= 1L << (nbytes * 8)
     return n
 
-import js
-
-Pickler.dispatch[js.Number]=lambda pickler, val: pickler.save(float(val))
-Pickler.dispatch[js.String]=lambda pickler, val: pickler.save(unicode(val))
-Pickler.dispatch[js.Boolean]=lambda pickler, val: pickler.save(bool(val))
-
-
 # Shorthands
 
 try:
